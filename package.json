@@ -1,0 +1,29 @@
+{
+  "name": "netflix-api",
+  "version": "1.0.0",
+  "description": "Database Schema for Netflix Netflix has users Every user has an email and a password Users can create profiles to have separate independent environments.Each profile has a name and a type. Type can be KID or ADULT.There are multiple videos on Netflix.For each video, there will be a title, description and a cast.A cast is a list of actors who were a part of the video. For each actor, we need to know their name and list of videos they were a part of.For every video, for any profile who watched that video, we need to know the status (COMPLETED/ IN PROGRESS).For every profile for whom a video is in progress, we want to know their last watch timestamp.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChetanBhole28/NetflixAPI.git"
+  },
+  "author": "Chetan Bhole",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChetanBhole28/NetflixAPI/issues"
+  },
+  "homepage": "https://github.com/ChetanBhole28/NetflixAPI#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "mysql2": "^3.9.1",
+    "randomstring": "^1.3.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
