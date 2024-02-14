@@ -103,7 +103,7 @@ const updateUser = async (req, res) => {
   
 };
 
-const deleteWishlist = async (req, res) => {
+const deleteUser = async (req, res) => {
     try {
       const { id } = req.params;
   
@@ -436,7 +436,7 @@ const authMiddle = async (req, res, next) => {
 router.get("/users/:id", getUserById);
 router.post("/users", createUser);
 router.put("/users/:id", updateUser);
-router.delete("/users/:id", deleteWishlist);
+router.delete("/users/:id", deleteUser);
 
 //Profiles API
 router.get("/profiles", authMiddle, getAllProfiles);
